@@ -5,9 +5,12 @@
     <meta charset="utf-8">
   </head>
  <body>
-    <main>
-     <h1>CAMPER CAFE</h1>
+       <main>
+      <h1>CAMPER CAFE</h1>
       <p>Est. 2020</p>
+      <section>
+       
+      </section>
     </main>
   </body>
 </html>
