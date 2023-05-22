@@ -1,1 +1,26 @@
+body {
+background-color: rgba(125, 105, 194, 0.7);
+font-size: 150%;
+font-family: Verdana, sans-serif;
+color: white;
+}
+fieldset {
+  border: 0px;
+}
+h1, #description {
+  text-align: center;
+}
+#title {
+  min-weigth: 200px;
+}
+input {
+  display:block;
+  margin: 5px;
+}
 
+#korobka {
+  min-weigth: 200px;
+  border: 10px solid black;
+  margin: 50px 100px;
+  background-color: rgba(23, 9, 69, 0.6);
+}
