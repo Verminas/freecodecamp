@@ -13,18 +13,17 @@
     <div id="korobka">
     <form action="#" method="post" id="survey-form">
       <fieldset>
-        <label>Name 
-          <input required id="name" name="username" type="text" placeholder="Enter your name">
+        <label for="name-label">Name 
+          <input required id="name-label" name="username" type="text" placeholder="Enter your name">
         </label>
-        <label>Email 
-          <input required id="email" type="email" name="useremail" placeholder="Enter your email">
+        <label for="email-label">Email 
+          <input required id="email-label" type="email" name="useremail" placeholder="Enter your email">
         </label>
-        <label>Age (optional) 
-          <input type="number" name="age" placeholder="Age" min="10" max="99">
+        <label for="number-label">Age (optional) 
+          <input type="number" id="number-label" name="age" placeholder="Age" min="10" max="99" required>
         </label>
-        <p>
-          Which option best describes your current role? 
-          <select name="optiondescribes">
+         <label for="dropdown1"> Which option best describes your current role? </label>
+          <select id="dropdown1" name="optiondescribes">
             <option selected disabled>
               Select current role</option>
             <option value="student">Student</option>
@@ -33,7 +32,6 @@
             <option value="prefenottosay">Prefer no to say</option>
             <option value="other">Other</option>
           </select>
-        </p>
       </fieldset>
       <fieldset>
         <p>Would you recommend freeCodeCamp to a friend?</p>
@@ -42,8 +40,8 @@
         <label><input type="radio" name="recommendfriend" value="notsure">Not sure</label>
       </fieldset>
       <fieldset>
-        <label for="favoritefeature">What is your favorite feature of freeCodeCamp?</label>
-        <select id="favoritefeature">
+        <label for="dropdown2">What is your favorite feature of freeCodeCamp?</label>
+        <select id="id="dropdown2">
           <option selected disabled value="select" >Select an option</option>
           <option value="chalenges">Chalenges</option>
           <option value="projects">Projects</option>
@@ -70,7 +68,7 @@
         <textarea placeholder="Enter your commet here..."></textarea>
       </fieldset>
       <fieldset>
-        <button type="submit">
+        <button type="submit" id="submit">
           Submit
         </button>
       </fieldset>
