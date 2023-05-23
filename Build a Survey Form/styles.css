@@ -1,26 +1,117 @@
+/*
 body {
 background-color: rgba(125, 105, 194, 0.7);
-font-size: 150%;
-font-family: Verdana, sans-serif;
+font-size: 100%;
+font-family: Verdana, moonspace;
 color: white;
 }
 fieldset {
-  border: 0px;
-}
-h1, #description {
-  text-align: center;
-}
-#title {
-  min-weigth: 200px;
-}
-input {
-  display:block;
-  margin: 5px;
+	border: 0px;
 }
 
-#korobka {
-  min-weigth: 200px;
-  border: 10px solid black;
-  margin: 50px 100px;
-  background-color: rgba(23, 9, 69, 0.6);
+h1, #description {
+  text-align: center;
+
+}
+
+form {
+background-color: rgba(17, 13, 46, 0.5);
+width: 40%;
+margin-left: auto;
+margin-right: auto;
+}
+div, label {
+	font-size: 110%;
+	display: block;
+	text-align: left;
+}
+input {
+	display: block;
+}
+input[type="checkbox"], input[type="radio"] {
+	display: inline-block;
+}
+input[type="text"], input[type="email"], input[type="number"], select, textarea, button {
+	width: 46em;
+	min-height: 2.5em;
+	padding: 0;
+	margin-left: auto;
+margin-right: auto;
+}
+
+textarea {
+	height: 80px;
+}
+label {
+
+}
+
+Старый css*/
+
+
+body {
+background-color: rgba(125, 105, 194, 0.7);
+font-size: 100%;
+font-family: Verdana, moonspace;
+color: white;
+}
+select, input { font-size: 90%;
+font-family: Verdana, moonspace;
+
+}
+fieldset {
+	border: 0px;
+}
+
+h1, #description {
+  text-align: center;
+
+}
+
+form {
+background-color: rgba(17, 13, 46, 0.5);
+width: 40%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 0px;
+}
+div, select, textarea, button {
+	font-size: 110%;
+	display: block;
+	
+}
+
+input[type="checkbox"], input[type="radio"], label {
+	display: inline-block;
+	align-content: left;
+}
+input[type="text"], input[type="email"], input[type="number"], select, textarea, button {
+	width: 600px;
+	min-width: 400px;
+	max-width: 600px;
+	min-height: 2.5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+label, p {
+	padding: 15px 0 3px 5px;
+}
+#name-label {
+	padding: 25px 0 5px 0px;
+}
+input, select {
+	box-shadow: 0 0 2px rgb(83, 31, 194);
+}
+
+textarea {
+	height: 80px;
+}
+button {
+	margin-bottom: 50px;
+}
+.left {
+	margin-left: 0px;
+}
+label, input, textarea, button, select, p {
+	padding-left: 10px;
 }
