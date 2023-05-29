@@ -17,14 +17,18 @@ main {
   padding: 10px;
   margin: 10px;
   }
+ #img-div{
+   display: block;
+margin: 0 auto;
+ }
  img {
     display: block;
     width: 70vw;
-    height: 623px;
+    height: auto;
     margin: 0 auto;
    min-height: 150px;
   min-width: 200px;
-  max-width: 1024px;
+  max-width: 100%;
 
   }
 h1, p, figcaption, h2, ul, li, blockquote {
