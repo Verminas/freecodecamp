@@ -1,1 +1,14 @@
-
+#container {
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+#info {
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+#figure {
+  background-color: white;
+  }
+#info>h1, #info>p {
+  text-align:center;
+}
