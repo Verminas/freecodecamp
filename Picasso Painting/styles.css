@@ -210,3 +210,18 @@ body {
   left: 0px;
 }
 
+#guitar-right {
+  position: absolute;
+  left: 100px;
+}
+
+.fa-bars {
+  display: block;
+  margin-top: 30%;
+  margin-left: 40%;
+}
+
+#guitar-neck {
+  width: 200px;
+  height: 30px;
+  background-color: #D2691E;}
