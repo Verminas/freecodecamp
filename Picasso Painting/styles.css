@@ -173,8 +173,8 @@ body {
 }
 
 #triangles {
-  width: 250px;
-  height: 550px;
+    width: 250px;
+    height: 550px;
 }
 
 .triangle {
@@ -199,10 +199,10 @@ body {
 }
 
 .guitar {
-  width: 150px;
-  height: 120px;
-  background-color: Goldenrod;
-  border-radius: 50%;
+width: 150px;
+height: 120px;
+background-color: Goldenrod;
+border-radius: 50%;
 }
 
 #guitar-left {
@@ -224,4 +224,22 @@ body {
 #guitar-neck {
   width: 200px;
   height: 30px;
-  background-color: #D2691E;}
+  background-color: #D2691E;
+  position: absolute;
+  top: 45px;
+  left: 200px;
+  z-index: 3;
+}
+
+.eyes {
+  width: 35px;
+  height: 20px;
+  background-color: #8B4513;
+  border-radius: 20px 50%;
+}
+
+.right {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
