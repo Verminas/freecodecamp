@@ -7,9 +7,9 @@
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #292828;
-  box-sizing: border-box;
+ /* box-sizing: border-box;*/
 }
-.nav-link, .nav-link li {
+.nav-link, #navbar li {
   text-decoration: none;
   list-style-type: none;
 }
@@ -24,11 +24,14 @@
   overflow: auto;
 }
 #navbar header{
-  font-size: 2rem;
+  font-size: 2.2rem;
+  padding: 8%;
 }
 #navbar li{
   font-size: 2rem;
   border-bottom: 3px solid black;
+  padding: 3%;
+  padding-left: 8%;
 }
 #navbar li:first-child{
   border-top:  3px solid black;
@@ -44,3 +47,26 @@ main{
   border-left: 5px solid black;
   padding-left: 3%;
 }
+section{
+  padding-left: 40px;
+}
+section header{
+  font-size: 2.2rem;
+  padding: 2%;
+}
+section article{
+  padding: 5%;
+}
+section ul{
+  padding-left: 15%;
+  padding-top: 5%;
+}
+code {
+  display: block;
+  width: 100%;
+  background-color: #d6d6d6;
+  border-radius: 15px;
+  padding: 5% 4%;
+  margin: 3%;
+}
+
