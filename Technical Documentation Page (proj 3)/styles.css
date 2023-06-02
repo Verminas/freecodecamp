@@ -1,1 +1,44 @@
+*{
+   /*убираю дефолтные стили в доке + общая стилизация*/
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-family: Roboto, "Open Sans", Lato, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #292828;
+  box-sizing: border-box;
+}
+.nav-link, .nav-link li {
+  text-decoration: none;
+  list-style-type: none;
+}
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 30vw;
+  max-width: 30vw;
+  max-height: 100vh;
+  border-right: 5px solid black;
+  overflow: scrol;
+}
+#navbar header{
+  font-size: 2rem;
+}
+#navbar li{
+  font-size: 2rem;
+  border: 2px solid black;
+}
+#navbar li:first-child{
+  border-top:  3px solid black;
+}
+#navbar li:last-child{
+  border-bottom:  none;
+}
 
+main{
+  position: absolute;
+  top: 0;
+  left: 40vw;
+}
