@@ -133,6 +133,16 @@ hr {
   margin-top: 2rem;
 }
 
-.lists li{
+.lists li {
   margin-bottom: 1.5rem;
+}
+
+.list-title, .list-subtitle {
+  color: #00beef;
+}
+
+.image-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, min-content);
 }
