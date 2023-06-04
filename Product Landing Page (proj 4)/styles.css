@@ -1,20 +1,23 @@
 *, ::before, ::after {
   margin: 0;
   padding: 0;
-  font-size: 1.1rem;
-  color: #363535;
+  font-size: 1.0rem;
+  color: var(--text-color);
   background-color: var(--background-color);
   text-decoration: none;
   list-style-type: none;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-ordinary);
 }
 :root {
 	/*ввожу переменные для быстрой смены цвета*/
 	--background-color: #f0f0f0;
-	--zagolovok-footer-color: #c2c2c2;
+	--zagolovok-footer-color: #e0e0e0;
 	--button-color: #f5b942;
 	--button-hover-color: #f58d42;
+	--text-color: #363535;
+	--font-zagolovki: "Baskerville Old Face", "Britanic bold", serif;
+	--font-ordinary: Arial, sans-serif;
 }
 body{
 	min-width: 800px;
@@ -25,7 +28,7 @@ body{
 	top: 0;
 	left: 0;
 	width: 100vw;
-	height: 10vh;
+	height: 8vh;
 	z-index: 2;
 	overflow-y: hidden;
 
@@ -36,19 +39,19 @@ body{
 	min-height: 80px;
 	max-height: 80px;
 	position: relative;
-	top: 1%;
+	top: 5%;
 	left: 1%;
 }
 #header{
-	border: 1px solid black;
+	/*border: 1px solid black; использовала границы при работе*/
 	display: inline-grid;
-	grid-template-columns: 90px 30% 15% 45%;
+	grid-template-columns: 90px 30% 10% 30%;
 	grid-template-rows: 1 / 2;
 	align-content: center;
 	justify-content: center;
 }
 #header nav ul {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: 1 / 2;
@@ -57,18 +60,18 @@ body{
 
 }
 #header h1, #header nav{
-	margin: 30px;
+	margin: 20px;
 }
 #header div { /*для создания пустого пространства между h1 и nav */
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	width: 0;
 	height: 0;
 }
 
 #mainfooter{
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	position: absolute;
-	top: 10vh;
+	top: 8vh;
 	width: 100vw;
 	display: grid;
 	grid-template-columns: 50%;
@@ -79,7 +82,7 @@ body{
 }
 #mainfooter section {
 	min-width: 600px;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	width: 60vw;
 	display: grid;
 	justify-items: center;
@@ -123,6 +126,9 @@ section{
 #section-one button{
 	font-weight: 600;
 }
+#section-one input{
+	background-color: white;
+}
 
 form, button {
 	display: flex;
@@ -144,7 +150,7 @@ form, button {
 #section-two li h2, #section-two li p{
 	position: relative;
 	left: 80px;
-	top: -90px;
+	top: -70px;
 }
 
 #section-two ul li:nth-child(1):before{
@@ -207,6 +213,7 @@ form, button {
 	width: 40%;
 	height: 25%;
 	margin-bottom: 10%;
+	padding: 10px;
 
 }
 button{
@@ -217,4 +224,15 @@ button:hover{
 	font-weight: 700;
 	background-color: var(--button-hover-color);
 }
-
+h1, h2{
+	font-family: var(--font-zagolovki);
+}
+h1{
+	font-size: 1.8rem;
+}
+h2{
+	font-size: 1.6rem;
+}
+#section-four article:hover, #section-two li:hover{
+	transform: scale(1.1);
+}
