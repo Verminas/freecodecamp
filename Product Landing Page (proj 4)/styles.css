@@ -1,6 +1,6 @@
-* {
+*, ::before, ::after {
   margin: 0;
-  padding: 10;
+  padding: 0;
   font-size: 1.2rem;
   color: #363535;
   background-color: #f0f0f0;
@@ -9,20 +9,25 @@
   box-sizing: border-box;
 }
 #header{
+	min-width: 800px;
+	/*min-height: 80px;*/
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 10vh;
 	z-index: 2;
+	overflow-y: hidden;
 
 }
 #header-img{
-	width: 80px;
-	height: 80px;
+	min-width: 80px;
+	max-width: 80px;
+	min-height: 80px;
+	max-height: 80px;
 	position: relative;
-	top: 5px;
-	left: 10px;
+	top: 1%;
+	left: 1%;
 }
 #header{
 	border: 1px solid black;
@@ -44,23 +49,61 @@
 #header h1, #header nav{
 	margin: 30px;
 }
-#header div {
+#header div { /*для создания пустого пространства между h1 и nav */
 	border: 1px solid black;
 	width: 0;
 	height: 0;
 }
 
-
-main{
-	position: relative;
-	top: 12vh;
+#mainfooter{
+	border: 1px solid black;
+	position: absolute;
+	top: 10vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 50%;
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
 }
-footer{
-	background-color: #dbdbdb;
+#mainfooter section  /*#mainfooter footer*/{
+	border: 1px solid black;
+	width: 60vw;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
 }
-section{
-	margin: 0 auto;
+#footer, #footer ul, #footer a, #footer p, #footer li{
+	background-color: #c2c2c2;
 }
+#footer ul, #footer p{
+	width: 60vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+#footer ul li a{
+	width: 15%;
+	margin: 25px;
+}
+#footer p{
+	padding-right: 25px;
+}
+/*#footer li  #footer p{
 	
+	border: 1px solid red;
+	display: flex;
+	
+	justify-content: center;
+	align-items: flex-start; */
+
+}
+#footer ul li a{
+	margin: 30px;
+}
+
 
 	
