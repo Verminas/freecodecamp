@@ -114,17 +114,27 @@ form, button {
 	align-items: center;
 }
 #section-two li{
-	margin-left: 30px;
-	margin-bottom: 50px;
-	
+	margin-bottom: 5px;
+	max-height: 90px;
+}
+#section-two li:first-child{
+	margin-top: 25px;
 }
 
+#section-two{
+	position: relative;
+}
+#section-two li h2, #section-two li p{
+	position: relative;
+	left: 80px;
+	top: -90px;
+}
 
 #section-two ul li:nth-child(1):before{
 	content: " ";
 	display: inline-block;
-	width: 80px;
-	height: 80px;
+	width: 70px;
+	height: 70px;
 	background: url(https://w7.pngwing.com/pngs/673/619/png-transparent-computer-icons-fire-flame-fire.png);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -132,8 +142,8 @@ form, button {
 #section-two ul li:nth-child(2):before{
 	content: " ";
 	display: inline-block;
-	width: 80px;
-	height: 80px;
+	width: 70px;
+	height: 70px;
 	background: url(https://e7.pngegg.com/pngimages/371/316/png-clipart-computer-icons-truck-business-car-i-free-truck-angle-text.png);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -141,8 +151,8 @@ form, button {
 #section-two ul li:nth-child(3):before{
 	content: " ";
 	display: inline-block;
-	width: 80px;
-	height: 80px;
+	width: 70px;
+	height: 70px;
 	background: url(https://myclick.su/upload/iblock/60c/zscalcc0itesic8mjap6d3lvi2lapt9y/elementypitaniyaakkumulyatoryzaryadnyeustroystva.png);
 	background-size: contain;
 	background-repeat: no-repeat;
