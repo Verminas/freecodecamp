@@ -7,10 +7,10 @@
   text-decoration: none;
   list-style-type: none;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 #header{
 	min-width: 800px;
-	/*min-height: 80px;*/
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -67,7 +67,7 @@
 	justify-content: center;
 	align-content: center;
 }
-#mainfooter section  /*#mainfooter footer*/{
+#mainfooter section {
 	border: 1px solid black;
 	width: 60vw;
 	display: grid;
@@ -87,23 +87,63 @@
 }
 #footer ul li a{
 	width: 15%;
-	margin: 25px;
+	margin: 30px;
 }
 #footer p{
 	padding-right: 25px;
 }
-/*#footer li  #footer p{
-	
-	border: 1px solid red;
+#buttonone{
+	width: 200px;
+}
+section{
+	padding: 30px;
+}
+#section-one h2, #section-one input, #section-one button{
+	display: grid;
+	padding: 10px;
+} 
+
+#section-one input, #section-one button{
+	margin: 10px;
+	}
+
+form, button {
 	display: flex;
-	
+	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start; */
-
+	align-items: center;
 }
-#footer ul li a{
-	margin: 30px;
-}
-
-
+#section-two li{
+	margin-left: 30px;
+	margin-bottom: 50px;
 	
+}
+
+
+#section-two ul li:nth-child(1):before{
+	content: " ";
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: url(https://w7.pngwing.com/pngs/673/619/png-transparent-computer-icons-fire-flame-fire.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#section-two ul li:nth-child(2):before{
+	content: " ";
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: url(https://e7.pngegg.com/pngimages/371/316/png-clipart-computer-icons-truck-business-car-i-free-truck-angle-text.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#section-two ul li:nth-child(3):before{
+	content: " ";
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: url(https://myclick.su/upload/iblock/60c/zscalcc0itesic8mjap6d3lvi2lapt9y/elementypitaniyaakkumulyatoryzaryadnyeustroystva.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
