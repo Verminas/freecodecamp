@@ -115,7 +115,7 @@ form, button {
 }
 #section-two li{
 	margin-bottom: 5px;
-	max-height: 90px;
+	max-height: 100px;
 }
 #section-two li:first-child{
 	margin-top: 25px;
@@ -156,4 +156,11 @@ form, button {
 	background: url(https://myclick.su/upload/iblock/60c/zscalcc0itesic8mjap6d3lvi2lapt9y/elementypitaniyaakkumulyatoryzaryadnyeustroystva.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+#section-three{
+	padding: 50px;
+}
+#section-three iframe{
+	width: 500px;
+	height: 400px;
 }
