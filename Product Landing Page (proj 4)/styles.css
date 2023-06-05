@@ -20,7 +20,7 @@
 	--font-ordinary: Arial, sans-serif;
 }
 body{
-	min-width: 800px;
+	min-width: 600px;
 }
 #header{
 	min-width: 600px;
@@ -106,7 +106,7 @@ body{
 #footer p{
 	padding-right: 25px;
 }
-#buttonone{
+.buttonone{
 	width: 200px;
 }
 #footer{
@@ -115,22 +115,23 @@ body{
 section{
 	padding: 30px;
 }
-#section-one h2, #section-one input, #section-one button{
+#section-one h2, #section-one input, #section-one input{
 	display: grid;
 	padding: 10px;
 } 
 
-#section-one input, #section-one button{
+#section-one input, #section-one input{
 	margin: 10px;
 	}
-#section-one button{
+#section-one .buttonone {
 	font-weight: 600;
+	background-color: var(--button-color);
 }
 #section-one input{
 	background-color: white;
 }
 
-form, button {
+form, input {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -209,21 +210,24 @@ form, button {
 	padding: 5% 10%;
 	text-align: center;
 }
-#section-four article button{
+#section-four article input{
 	width: 40%;
 	height: 25%;
 	margin-bottom: 10%;
 	padding: 10px;
 
 }
-button{
+input{
 	text-transform: uppercase;
 	background-color: var(--button-color);
 }
-button:hover{
+input .buttonone:hover{
 	font-weight: 700;
 	background-color: var(--button-hover-color);
 }
+.buttonone:hover{
+	font-weight: 700;
+	background-color: var(--button-hover-color);}
 h1, h2{
 	font-family: var(--font-zagolovki);
 }
@@ -235,4 +239,18 @@ h2{
 }
 #section-four article:hover, #section-two li:hover{
 	transform: scale(1.1);
+}
+@media screen and (max-width: 500px){
+	body{
+		display: flex;
+		flex-direction: column;
+	}
+	header{
+		display: flex;
+		flex-direction: column;
+	}
+	section{
+		display: flex;
+		flex-direction: column;
+	}
 }
