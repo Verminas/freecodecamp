@@ -203,18 +203,22 @@ body {
     var(--penguin-skin),
     rgb(209, 210, 199)
   );
+  border-radius: 30% 30% 30% 120%;
+
 }
 
-.arm.left{
-  position: absolute;
+.arm.left {
   top: 35%;
   left: 5%;
-  }
-  .arm.right{
-  position: absolute;
+  transform-origin: top left; 
+  transform: rotate(130deg) scaleX(-1);
+}
+
+.arm.right {
   top: 0%;
   right: -5%;
-  }
+  transform: rotate(-45deg);
+}
 
 .foot {
   width:  15%;
