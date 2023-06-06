@@ -38,7 +38,7 @@ header #description{
 	/*использовала генератор градиентов*/
 	background: rgb(121,112,224);
 	background: radial-gradient(circle, rgba(121,112,224,0.8603816526610644) 0%, rgba(110,192,238,0.8575805322128851) 49%, rgba(100,70,252,0.5130427170868348) 100%);
-	width: 40%;
+	width: 50%;
 	margin: 0 auto;
 	padding: 2%;
 	border-radius: 20px;
@@ -95,4 +95,109 @@ button:hover{
 }
 input[type="checkbox"], input[type="radio"] {
 	transform: scale(1.6);
+}
+/*создаю медиазапрос для изменения ширины и размера текста*/
+@media screen and (max-width: 320px){
+	*{font-size: 1.0rem;
+	}
+	header, .container{
+		min-width: 100%;
+		padding-top: 10px;
+		margin: 0;
+	}
+	header #title{
+		padding-top: 0;
+		margin-top: 10px;
+		font-size: 1.6rem;
+	}
+	header #description{
+		font-size: 0.8rem;
+		margin-bottom: 10px;
+	}
+	div{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	}
+	input[type="checkbox"], input[type="radio"] {
+	transform: scale(1.2);
+}
+}
+@media screen and (max-width: 480px){
+	*{font-size: 1.05rem;
+	}
+	header, .container{
+		min-width: 100%;
+		padding-top: 15px;
+		margin: 0;
+	}
+	header #title{
+		padding-top: 0;
+		margin-top: 15px;
+		font-size: 1.8rem;
+	}
+	header #description{
+		font-size: 1rem;
+		margin-bottom: 10px;
+	}
+	div{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	}
+	input[type="checkbox"], input[type="radio"] {
+	transform: scale(1.2);
+}
+}
+
+@media screen and (max-width: 600px){
+	*{font-size: 1.1rem;
+	}
+	header, .container{
+		min-width: 400px;
+		width: 80%;
+		padding-top: 15px;
+		margin: 0 auto;
+	}
+	header #title{
+		padding-top: 0;
+		margin-top: 15px;
+		font-size: 1.9rem;
+	}
+	header #description{
+		font-size: 1.1rem;
+		margin-bottom: 15px;
+	}
+	div{
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+	}
+	input[type="checkbox"], input[type="radio"] {
+	transform: scale(1.3);
+}
+}
+
+@media screen and (min-width: 1500px){
+	*{font-size: 1.6rem;
+	}
+	header, .container{
+		min-width: 800px;
+		width: 70%; 
+		padding-top: 3%;
+		margin: 0 auto;
+	}
+	header #title{
+		padding-top: 0;
+		margin-top: 15px;
+		font-size: 2.5rem;
+	}
+	header #description{
+		font-size: 1.8rem;
+		margin-bottom: 4%;
+	}
+	div{
+	margin-top: 1.1%;
+	margin-bottom: 1.5%;
+	}
+	input[type="checkbox"], input[type="radio"] {
+	transform: scale(2.2);
+}   
 }
