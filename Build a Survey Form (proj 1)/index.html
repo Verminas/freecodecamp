@@ -6,11 +6,18 @@
     content="width=device-width, initial-scale=1.0">
     <title>freeCodeCamp Survey Form</title>
     <link rel="stylesheet" href="styles.css">
+      <!--подключила гугл шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+      <!--подключила гугл шрифты -->
   </head>
   <body> 
+    <header>
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
-  
+    </header>
+    <div class="container">
     <form action="#" method="post" id="survey-form">
       <fieldset >
         <div>
@@ -41,11 +48,11 @@
           </select>
           </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset-two">
         <p class="left">Would you recommend freeCodeCamp to a friend?</p>
-        <div><input checked type="radio" name="recommendfriend" value="definitely" id="def"><label for="def">Definitely</label></div>
-        <div><input type="radio" name="recommendfriend" value="maybe" id="maybe"><label for="maybe">Maybe</label></div><div>
-        <input type="radio" name="recommendfriend" value="notsure" id="notsure"><label for="notsure">Not sure</label></div>
+        <div><input class="radio" checked type="radio" name="recommendfriend" value="definitely" id="def"><label for="def">Definitely</label></div>
+        <div><input class="radio" type="radio" name="recommendfriend" value="maybe" id="maybe"><label for="maybe">Maybe</label></div><div>
+        <input class="radio" type="radio" name="recommendfriend" value="notsure" id="notsure"><label for="notsure">Not sure</label></div>
       </fieldset>
       <fieldset>
         <label for="dropdown2" class="left">What is your favorite feature of freeCodeCamp?</label>
@@ -57,7 +64,7 @@
           <option value="opensource">Open source</option>
           </select>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset-four">
         <p class="left">What would you like to see improved? (Check all that apply)</p>
         <div class="left">
         <div><input type="checkbox" name="frontend" value="frontend" id="frontend"><label for="frontend">Front-end Projects</label></div>
@@ -95,6 +102,7 @@
       </fieldset>
     
     </form>
+  </div>
 
   </body>
 </html>
