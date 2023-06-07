@@ -109,32 +109,61 @@ blockquote, #blockquote{
 }
 
 /*далее идут медиазапросы*/
-@media screen and (max-width: 480px) {
-  *{border-radius: 0px;}
+@media screen and (max-width: 600px) {
+  body{
+    background-color: #edba6d;
+  }
+  main{
+    background-color: #edba6d;
+    border-radius: 5%;
+    }
   h1 {
   letter-spacing: 0.4rem;
   font-size: 2rem;
   }
 
   #tribute-info p, #img-caption{
-  font-size: 0.8rem;
-  padding-bottom: 1%;
+  font-size: 1.2rem;
+  padding: 1%;
    }
   #figure{
+  background-color: #edba6d;
   width: 100%;
-  margin: 10px;
   text-align: center;
   border-radius: 0px;
   }
+  .scale{
+    border-radius: 1px;
+    width: 100%;
+    padding: 0;
+  }
   #image{
-  border-radius: 1%;
+  border-radius: 1px;
   width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  }
+  ul{
+    padding-left: 5px;
   }
   #centerli{
-  width: 100%;
+  width: 96%;
+  font-size: 1.1rem;
+  padding-left: 1.7%;
   }
   h2{
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
+  }
+  #footer{
+    margin-bottom: 30px;
+    font-size: 0.5rem;
+  }
+  #footer::after{
+    content: "fgh"; /*чтобы футер был в пределах квадрата main*/
+    opacity: 0;
+    display: block;
+    margin-bottom: 5px;
   }
 }
