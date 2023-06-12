@@ -19,9 +19,319 @@
 	--font-zagolovki: "Baskerville Old Face", "Britanic bold", serif;
 	--font-ordinary: Arial, sans-serif;
 }
-body{
+header, main{
 	min-width: 600px;
 }
+/*работаю над шрифтами ниже*/
+h1, h2, h3, h4{
+	font-family: var(--font-zagolovki);
+	font-size: 1.3rem;
+}
+h2{
+	font-size: 1.8rem;
+}
+h1{
+	font-size: 2.0rem;
+}
+#section-two p{
+	font-size: 0.9rem;
+}
+#section-four h4{
+	font-size: 1.8rem;
+}
+#section-four p{
+	line-height: 1.8rem;
+}
+
+header{
+	/*border: 1px solid black;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/*flex-wrap: wrap;*/
+	align-items: center;
+	/*margin: 1% 1.5%;*/
+	position: fixed;
+	min-width: 100vw;
+	min-height: 10vh;
+	top:0;
+	left: 0;
+	z-index: 1;
+}
+#header-one{
+	display: flex;
+	flex-shrink: 1;
+	/*border: 1px solid black;*/
+	justify-content: center;
+	align-items: center;
+	margin-left: 2%;
+}
+#header-img{
+	min-width: 80px;
+	max-width: 80px;
+	min-height: 80px;
+	max-height: 80px;
+	}
+h1{
+	display: inline-flex;
+}
+nav{
+	margin-right: 2%;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-shrink: 1;
+	flex-grow: 1;
+	/*border: 1px solid black;*/
+	column-gap: 30px;
+	flex-wrap: wrap;
+	width: 100%;
+
+}
+nav ul li{
+	flex-shrink: 1;
+	padding: 1px;
+	/*border: 1px solid green;*/
+	width: 10vw;
+	text-align: center;
+	align-self: center;
+}
+#mainfooter{
+	position: absolute;
+	left: 0;
+	top: 13vh;
+	width: 100vw;
+}
+main{
+	margin: 0 auto;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+	/*border: 1px solid black;*/
+}
+footer{
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	/*border: 1px solid black;*/
+	background-color: var(--zagolovok-footer-color);
+
+	}
+footer ul{
+	padding-top: 1%;
+	display: flex;
+	flex-direction: row;
+	/*justify-content: flex-end;*/
+	justify-content: space-around;
+	column-gap: 50px;
+	background-color: var(--zagolovok-footer-color);
+}
+footer p{
+	padding-top: 0.5%;
+	padding-bottom: 1.5%;
+	background-color: var(--zagolovok-footer-color);
+}
+footer ul li a{
+ background-color: var(--zagolovok-footer-color);
+}
+/*а сайте нашла как заменить пункты списка на картинки*/
+#section-one, #section-one form {
+	margin-top: 3%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+#section-two ul li:nth-child(1):before{
+	content: " ";
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	background: url(https://w7.pngwing.com/pngs/673/619/png-transparent-computer-icons-fire-flame-fire.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 20px;
+}
+#section-two ul li:nth-child(2):before{
+	content: " ";
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	background: url(https://e7.pngegg.com/pngimages/371/316/png-clipart-computer-icons-truck-business-car-i-free-truck-angle-text.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 30px;
+}
+#section-two ul li:nth-child(3):before{
+	content: " ";
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	background: url(https://myclick.su/upload/iblock/60c/zscalcc0itesic8mjap6d3lvi2lapt9y/elementypitaniyaakkumulyatoryzaryadnyeustroystva.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 30px;
+}
+#section-two ul{
+	display: flex;
+	width: 60%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+#section-two ul li{
+ display: flex;
+ flex-direction: row;
+}
+#section-two ul li div{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+#section-four{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	}
+#section-four article{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	border: 1px solid black;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 0px !important;
+	max-height: 500px;
+	min-height: 300px;
+	padding-top: 10px; /*перезаписывыаю свойдство для верхнего паддинга*/
+	
+}
+#section-four article h3, #section-four article h4, #section-four article p, #section-four article  input {
+	margin: 10px;
+}
+#section-four article p{
+	width: 40%;
+	text-align: center;
+}
+#section-four article:nth-child(3) p{ /*пришлось выровнять текст в 3 колонке, чтобы не прыгала кнопка*/
+	width: 50%;
+}
+#section-four article h3{
+	margin-top: 0;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #e3e3e3;
+	display: block;
+	text-align: center;
+	width: 100%;
+	min-height: 40px;
+}
+#section-four article h3, #section-four article h4{
+	text-transform: uppercase;
+}
+
+input[type="submit"]{
+	padding: 10px 15px;
+	margin-top: 2%;
+	margin-bottom: 4%;
+	background-color: var(--button-color);
+	font-weight: 700;
+	border: none;
+}
+#submit{
+	margin: 3% 10% 3% 10%;
+	width: 60%;
+	align-self: center;
+	font-weight: 900;
+}
+input[type="submit"]:hover{
+	transform: scale(1.1);
+	box-shadow: 2px 2px 5px var(--button-hover-color), -2px -2px 5px var(--button-hover-color);
+	background: rgb(177,102,9);
+	background: linear-gradient(56deg, rgba(177,102,9,1) 0%, rgba(238,211,42,1) 37%, rgba(238,211,42,1) 59%, rgba(171,104,9,1) 100%);
+	transition-duration: 300ms;
+	transition-delay: 100ms;
+}
+#section-two ul li:hover{
+	transform: scale(1.1);
+	transition-duration: 300ms;
+	transition-delay: 100ms;
+}
+#email{
+	background-color: white;
+	min-height: 20px;
+	padding: 5px;
+}
+#email:active{
+	box-shadow: 1px 1px 5px white, -1px -1px 5px white;
+}
+/*вроде как в целом закончила, дальше для медиазапроса*/
+@media screen and (max-width: 620px){
+	main{
+		width: 100%;
+		gap: 10px;
+	}
+	header{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	h1{
+		font-size: 1.5rem;
+	}
+	h2, h3, h4{
+		font-size: 1.0rem;
+	}
+	#header-img{
+	min-width: 50px;
+	max-width: 50px;
+	min-height: 50px;
+	max-height: 50px;
+	}
+	#section-four{
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+	#section-four article{
+	margin: 10px;
+	width: 60%;
+	text-align: center;
+	max-height: 300px;
+	min-height: 250px;
+	line-height: 0.3rem;
+}
+	#section-four article p{
+	width: 90%;
+}
+	#footer{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	#section-two ul{
+		width: 80%;
+		margin: 0 auto;
+	}
+	#section-two ul li{
+		height: 80px;
+	}
+	#section-two ul li div{
+		height: 5px;
+	}
+}
+/*вроде как закончила с общей стилизацией, сейчас приступаю к корректировке шрифтов и цветов*/ 
+/* старый вариант, решила все переделать
 #header{
 	min-width: 600px;
 	position: fixed;
@@ -43,7 +353,7 @@ body{
 	left: 1%;
 }
 #header{
-	/*border: 1px solid black; использовала границы при работе*/
+	/*border: 1px solid black; использовала границы при работе
 	display: inline-grid;
 	grid-template-columns: 90px 30% 10% 30%;
 	grid-template-rows: 1 / 2;
@@ -51,7 +361,7 @@ body{
 	justify-content: center;
 }
 #header nav ul {
-	/*border: 1px solid black;*/
+	/*border: 1px solid black;
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: 1 / 2;
@@ -63,13 +373,13 @@ body{
 	margin: 20px;
 }
 #header div { /*для создания пустого пространства между h1 и nav */
-	/*border: 1px solid black;*/
+	/*border: 1px solid black;
 	width: 0;
 	height: 0;
 }
 
 #mainfooter{
-	/*border: 1px solid black;*/
+	/*border: 1px solid black;
 	position: absolute;
 	top: 8vh;
 	width: 100vw;
@@ -82,7 +392,7 @@ body{
 }
 #mainfooter section {
 	min-width: 600px;
-	/*border: 1px solid black;*/
+	/*border: 1px solid black;
 	width: 60vw;
 	display: grid;
 	justify-items: center;
@@ -254,3 +564,4 @@ h2{
 		flex-direction: column;
 	}
 }
+*/
