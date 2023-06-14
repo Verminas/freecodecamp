@@ -34,14 +34,34 @@ body{
 }
 #navbar ul{
 	display: grid;
-	grid-template-columns: repeat(3, 120px);
+	grid-template-columns: repeat(3, 180px);
 	align-items: center;
 	justify-content: space-around;
+	grid-column-gap: 10px;
+	align-content: center;
+	/*align-self: center;
+	grid-auto-flow: row;*/
 }
 #navbar ul li{
+	/*padding-top: 20px;*/
 	text-transform: capitalize;
 	font-size: 1.5rem;
-	
+	text-align: center;
+	height: 100%;
+	width: 80%;
+	/*align-self: center;
+	align-content: center;
+	align-items: center;
+	/*justify-content: center;
+	justify-items: center;
+	justify-self: center;*/
+}
+
+#navbar ul li:last-child{
+	margin-right: 150px;
+}
+#navbar ul li:hover{
+	background-color: rgba(87,104,153,1);
 }
 #welcome-section{
 	width: 100vw;
@@ -68,7 +88,8 @@ body{
 	background: rgb(83,85,126);
 	background: linear-gradient(45deg, rgba(83,85,126,1) 0%, rgba(85,111,125,1) 50%, rgba(87,104,153,1) 100%);
 	width: 100vw;
-	height: calc(100vh+300px); /*!!!! возможно в процессе поменяю значение!!!*/ 
+	height: calc(100vh+400px); /*!!!! возможно в процессе поменяю значение!!!*/
+	padding-bottom: 80px; 
 }
 #projects h2{
 	display: table; /*чтобы линия под текстом была равна ширине текста + размещение по центру ниже*/
@@ -89,11 +110,12 @@ body{
 	justify-items: center;
 	justify-content: center;
 }
-.project-title img{ /*НЕ ЗАБУДЬ ВЕРНУТЬСЯ К ЭТОМУ БЛОКУ ПОЗЖЕ, ЧТОБЫ БЫЛО КАК В ОРИГИНАЛЕ!!!!*/
+.project-title img{ /*?????НЕ ЗАБУДЬ ВЕРНУТЬСЯ К ЭТОМУ БЛОКУ ПОЗЖЕ, ЧТОБЫ БЫЛО КАК В ОРИГИНАЛЕ!!!!*/
 	width: 400px;
 	height: 400px;
 	background-size: 100% 100%;
 	background-position: center;
+	background-size: contain;
 }
 .project-title figcaption{
 	background-color: #3a4b54;
@@ -102,6 +124,7 @@ body{
 	text-transform: capitalize;
 	text-align: center;
 	padding: 15px;
+	display: block;
 }
 .project-title figcaption:hover::before{ /*КАКАЯ-ТО ФИГНЯ С АНИМАЦИЕЙ ПЕРЕХОДА + ДЕРГАЕТСЯ ТЕКСТ ПРИ ПОЯВЛЕНИИ СИМВОЛОВ*/
 	content: "< ";
@@ -114,8 +137,6 @@ body{
 	content: " />";
 	color: #d59744;
 	font-size: 1.4rem;
-	transition-delay: 3s;
-	transition-duration: 3s;
 }
 #profile-link{ /*ЭТО ССЫЛКА НА РАБОТЫ ПОСЛЕ ПРЕОКТОВ*/
 	font-size: 1.5rem;
@@ -124,8 +145,9 @@ body{
 	width: 10%;
 	height: 10%;
 	background-color: rgba(68,76,103,1);
-	margin: 130px 45% 80px 45%;
-	display: inline-grid;
+	margin: 130px 45% 10px 45%;
+	display: block;
+	text-align: center;
 	justify-content: center;
 	box-shadow: 1px 1px 5px #444c67, -1px -1px 5px #444c67;
 }
@@ -136,7 +158,12 @@ body{
 	background-color: rgba(166,42,42,1);
 	box-shadow: 1px 1px 5px rgba(171,36,36,1), -1px -1px 5px rgba(171,36,36,1);
 }
-
+#profile-link:hover::after{
+	content: "   >";
+	white-space: pre; /*благодаря этому св-ву в ссс считываются пробелы перед скобкой! запомни!!!*/
+	transition-delay: 1s;
+	transition-duration: 5s;
+}
 
 #contact{
 	padding-top: 10%;
@@ -241,4 +268,5 @@ footer{
 footer img{
 	width: 20px;
 	height: 20px;
+	transform: translateY(5px);
 }
